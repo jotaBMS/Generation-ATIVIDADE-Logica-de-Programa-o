@@ -1,0 +1,37 @@
+programa {
+  
+  funcao inicio() 
+  {
+    inteiro vet[10] = {2,5,1,3,4,9,7,8,10,6}
+    inteiro i, secundario, trocas =1
+    
+
+    para(i=0; i<10; i++)
+    {
+        vet[i] <- i
+    }
+
+    
+
+  enquanto(trocas == 1)
+  {  
+    trocas = 0
+      para (i=0; i<10-1; i++)
+    {
+      se(vet[i] < vet[i+1])
+      {
+        secundario = vet[i]
+        vet[i] = vet[i+1]
+        vet[i+1] = secundario
+        trocas = 1
+      }
+    }
+  }
+
+   para (i=0; i<10; i++)
+    {
+       escreva( vet[i]," ")
+    }
+
+  }
+}
