@@ -1,0 +1,48 @@
+programa {
+  
+  funcao inicio() 
+  {
+    inteiro vet[10] = {2,5,1,3,4,9,7,8,10,6}
+    inteiro i, resto, numero, impares[], pares[], zero=0
+    inteiro soma = 0, media
+    
+
+    para(inteiro i=0; i<10; i++)
+    {
+        vet[i] <- i
+        escreva( vet[i]," ")
+    }
+  
+    //soma
+    para(inteiro i=0; i<10; i++)
+    {
+       soma = soma+vet[i]
+       
+    }
+
+    escreva ("\nsoma dos numeros:",soma)
+  
+    //média
+    media = soma/10
+
+    escreva ("\nmedia dos numeros:",media)
+
+   para ( inteiro i=0; i<10; i++)
+    {         
+     se ( 0 = vet[i] % 2)
+      {
+       pares[p]=vet[i]
+       p++  
+      }entao{
+        impares[m]=vet[i]
+        m++
+      }
+      escreva( "\nnumeros impares", impares[m]," ")
+      escreva( "\nnumeros pares", pares[p]," ")
+    }
+
+    
+  
+
+  }
+}
